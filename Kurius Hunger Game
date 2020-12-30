@@ -1,0 +1,134 @@
+print("----------------------\n")
+print("FLAWLESS VICTORY😄:    375\n")
+print("Spectacular            200\n")
+print("Super:                 100\n")
+print("Meh:                    0 \n")
+print("EPIC FAILIURE😨      less than 0😨\n")
+print("----------------------\n\n")
+
+tally = 0
+# Starting scenario
+print(
+      "People need your help! \nWe need you to use the least amount of resources so that other kids like you don't starve! \n the weight of their lives are on your shoulders😨" \
+      "\n\nYou now enter a Grocery store and you need protein. You see beef(steak) and chicken on the right, should you get the beef🐄 or the chicken🐓. \nHint: which protien uses the least water to produce???\n")
+print("Choice A: Beef🐄")
+print("Choice B: Chicken🐓\n")
+Choice1 = input("???:  ")
+# Info from https://www.theguardian.com/news/datablog/2013/jan/10/how-much-water-food-production-waste
+if Choice1 == "a" or Choice1 == "A":
+      print("Incorrect!😨\n Beef🐄 requires 15,000 L per kilogram of water while chicken 🐓 requires 4,300 L of water per kilogram \n50 point deduction, Beef uses wayy too many resources!😨\n\n")
+      tally -= 50
+if Choice1 == "b" or Choice1 == "B":
+      print("Correct!😄\nBeef🐄 requires 15,000 L of water while chicken 🐓 requires 4,300 L of water. \nYou gained 10 points!\😄, but meat in general uses lots of resources😨!\n\n")
+      # Keeps track of score
+      tally += 25
+# Q2
+print("You enter the vegetable aisle and you see potato 🥔 and cabbage 🥗")
+print("Which one uses the least water to produce?")
+print("Choice A: Cabbage🥗")
+print("Choice B: Potato🥔")
+Choice2 = input("Pick the best option: ")
+if Choice2 == "a" or Choice2 == "A":
+      print(
+            "Incorrect!😨 \nPotatoes 🥔 require 287 L of water per Kg while cabbage 🥗 requires 237L. Keep in mind potatoes🥔 have 87 calories per 100 grams, while cabbage🥗 only has 23, so there's actually vastly more water used for the provided energy.\n "
+            "No point deduction! Plant based options tend to be great choices.\n\n")
+if Choice2 == "b" or Choice2 == "B":
+      print(
+            "Correct!😄 \nPotatoes 🥔 require 287 L of water per Kg while cabbage 🥗 requires 237L. Keep in mind potatoes🥔 have 87 calories per 100 grams, while cabbage🥗 only has 23, so there's actually vastly more water used for the provided energy.\n You gained 50 points!\😄\n\n")
+      tally += 50
+
+# Q3
+print("You enter the fruit aisle and you see Blueberries 🍇 and Kiwis🥝")
+print("Which one is more abundant in Canada?")
+print("Choice A: Kiwis🥝")
+print("Choice B: Blueberries 🍇")
+Choice3 = input("Pick the best option: ")
+if Choice3 == "a" or Choice3 == "A":
+      print(
+            "Incorrect!😨 \n Kiwis🥝 are very rare compared to the most readily available fruit in Canada, Blueberries🍇   \n You have still gained 10 points because Plant Based options are great😄!\n\n")
+      tally += 10
+if Choice3 == "b" or Choice3 == "B":
+      print(
+            "Correct!😄 \nKiwis🥝 are very rare compared to the most readily available fruit in Canada, Blueberries🍇 \nYou gained 50 points!\😄\n\n")
+      tally += 50
+
+# Q4 Cheese and Eggs
+print("Now you've entered the meat alternatives aisle and you see Cheese and Eggs.")
+print("Choice A: Cheese")
+print("Choice B: Eggs")
+Choice4 = input("Which one has less carbon footprint on the atmosphere?: ")
+if Choice4 == "a" or Choice4 == "A":
+      print(
+            "Incorrect! Cheese produces 21 Kg of Co2 per Kg while Eggs produce 4.5 Kg of Co2 per Kg! 25 point reduction!\n\n ")
+      tally -= 25
+if Choice4 == "b" or Choice4 == "B":
+      print(
+            "Correct! Cheese produces 21 Kg of Co2 per Kg while Eggs produce 4.5 Kg of Co2 per Kg! 50  points earned!\n\n")
+      tally += 50
+
+# Q5 Chocolate and Cane Sugar
+print("Now you've entered the snack aisle and see chocolate and cane sugar.")
+print("Choice A: Chocolate")
+print("Choice B: Cane Sugar")
+Choice5 = input("Which one has less carbon footprint on the atmosphere?: ")
+if Choice5 == "a" or Choice5 == "A":
+      print(
+            "Incorrect! Chocolate produces 19 Kg of Co2 per Kg while Cane Sugar produce 3 Kg of Co2 per Kg! 25 point reduction!\n\n ")
+      tally -= 25
+if Choice5 == "b" or Choice5 == "B":
+      print(
+            "Correct!  Chocolate produces 19 Kg of Co2 per Kg while Cane Sugar produce 3 Kg of Co2 per Kg! 50  points earned!\n\n")
+      tally += 50
+
+# Q6 Oatmeal and Rice
+print("Now you've entered the meat alternatives aisle and you see Oatmeal and Rice🍚")
+print("Choice A: Oatmeal")
+print("Choice B: Rice🍚")
+Choice6 = input("Which one has less carbon footprint on the atmosphere?: ")
+if Choice6 == "a" or Choice6 == "A":
+      print("Correct! Both Oat Meal and Rice are Excellent choices for environmentally conscious food products.\n\n")
+      tally -= 25
+if Choice6 == "b" or Choice6 == "B":
+      tally += 50
+      print("Correct!Both Oat Meal and Rice are Excellent choices for environmentally conscious food products.\n\n")
+
+# Q7 Hadi
+print("You enter the dairy Isle and see Almond milk and Dairy Milk. ")
+print("Choice A: Almond milk")
+print("Choice B: Dairy milk")
+Choice7 = input("Which uses less water per gallon?: ")
+if Choice7 == "a" or Choice7 == "A":
+      print("Correct! Almond Milk is by far the better option. \nYou Gained 50 points\n\n")
+      tally += 50
+if Choice7 == "b" or Choice7 == "B":
+      print("Incorrect! Almond Milk is by far the better option.\ 25 Point reduction!\n\n")
+      tally -= 25
+
+# Q8
+print("Which one of the following products produce the most calories per crop yield?")
+print("Choice A: Grain Corn")
+print("Choice B: Cabbage")
+Choice8 = input()
+if Choice8 == "A" or Choice8 == "a":
+      print(
+            "Correct! Grain corn produces around 29,000 calories per crop yield while Cabbage produces roughly 9,500 calories per crop yield! 50 points gained!\n\n")
+      tally += 50
+if Choice8 == "B" or Choice8 == "b":
+      print(
+            "Incorrect! Grain corn produces around 29,000 calories per crop yield while Cabbage produces roughly 9,500 calories per crop yield! 25 point deduction!\n\n")
+      tally -= 25
+print("You now have " + str(tally) + " points!!")
+print(tally)
+# flawless
+if tally == 375:
+      print("FLAWLESS VICTORY😄😄😄😄")
+if tally >= 200 and tally > 375:
+      print("SPECTACULAR😄😄😄")
+if tally >= 100 and tally > 200:
+      print("SUPER😄")
+if tally >= 0 and tally > 100:
+      print("MEH😨")
+if tally > 0:
+      print("EPIC FAILIURE 😨😨😨😨😨")
+
+#IG name Kurius_Hunger_Game
