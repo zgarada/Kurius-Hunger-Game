@@ -1,0 +1,20 @@
+{
+  "ques" : [
+    "1.You enter a grocery store and you enter the meat section\nYou see beef\uD83D\uDC04, chicken meat\uD83D\uDC13, pork, and sheep meat\nWhich one uses the least water to produce?",
+    "2.Which one of these products have the LEAST carbon footprint on\nthe atmosphere?",
+    "3.Which one of the following foods is the most energy efficient?",
+    "4.Which one of these products yield the most calories per crop yield?",
+    "5.How much food do you think is wasted annually in Ontario?"
+  ],
+
+  "options" : [
+    ["Beef", "Chicken Meat", "Pork", "Sheep Meat"],
+    ["Chocolate", "Cheese", "Eggs", "Milk"],
+    ["Eggs", "Corn", "Cheese", "Beef"],
+    ["Potato","Cabbage","Grain Corn","Dry Beans"],
+    ["3.6 Million Tonnes", "4 Thousand Tonnes", "100 Tonnes", "500 Thousand Tonnes"]
+  ],
+
+  "ans" : [ 2, 4, 2, 3, 1]
+
+}
